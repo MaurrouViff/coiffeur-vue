@@ -1,3 +1,18 @@
 {
-
+  "database_name": "Contact",
+  "tables": [
+    {
+      "table_name": "eleve",
+      "columns": [
+        "adresse",
+        "lien_adresse"
+      ],
+      "data": [
+        {
+          "adresse": "",
+          "lien_adresse": ""
+        }
+      ]
+    }
+  ]
 }
