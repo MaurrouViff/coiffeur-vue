@@ -1,3 +1,34 @@
 {
-
+  "database_name": "Contact",
+  "tables": [
+    {
+      "table_name": "eleve",
+      "columns": [
+        "id",
+        "nom",
+        "prenom",
+        "métier"
+      ],
+      "data": [
+        {
+          "id": 1,
+          "nom": "",
+          "prenom": "",
+          "métier": ""
+        },
+        {
+          "id": 2,
+          "nom": "",
+          "prenom": "",
+          "métier": ""
+        },
+        {
+          "id": 3,
+          "nom": "",
+          "prenom": "",
+          "métier": ""
+        }
+      ]
+    }
+  ]
 }
