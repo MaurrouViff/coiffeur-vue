@@ -12,7 +12,7 @@
       </div>
       <div class="feature">
         <div class="feature-title"><img src="../assets/image-icon/contact-icon.png" alt="Image de contact" class="image-icon">Contact</div>
-        <div class="feature-text">Cliquez sur le bouton "<span style="color: red;">CONTACT</span>" en haut ou <router-link to="/contact" class="link-to-page">cliquez ici</router-link> pour nous contacter !</div>
+        <div class="feature-text">Cliquez sur le bouton "<span id="span-contact">CONTACT</span>" tant que cela est dans nos <router-link to="/horraire" class="link-to-page">horraires !</router-link></div>
       </div>
       <div class="feature">
         <div class="feature-title"><img src="../assets/image-icon/contact-icon.png" alt="Image de contact" class="image-icon">Contact</div>
@@ -82,5 +82,8 @@
 .link-to-page:hover {
   opacity: 1;
   text-decoration: underline;
+}
+#span-contact {
+  color: red;
 }
 </style>
