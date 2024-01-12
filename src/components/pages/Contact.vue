@@ -53,7 +53,7 @@ export default {
   methods: {
     async loadData() {
       try {
-        const response = await axios.get('/public/contact.json');
+        const response = await axios.get('/contact.json');
         this.contactData = response.data;
       } catch (error) {
         console.error('Erreur lors du chargement des données :', error);
