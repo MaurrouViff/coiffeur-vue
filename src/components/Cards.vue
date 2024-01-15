@@ -12,11 +12,27 @@
       </div>
       <div class="feature">
         <div class="feature-title"><img src="../assets/image-icon/contact-icon.png" alt="Image de contact" class="image-icon">Contact</div>
-        <div class="feature-text">Cliquez sur le bouton "<span id="span-contact">CONTACT</span>" tant que cela est dans nos <router-link to="/horraire" class="link-to-page">horraires !</router-link></div>
+        <div class="feature-text">Cliquez sur le bouton "<span id="span-contact">CONTACT</span>" pour nous contacter</div>
       </div>
       <div class="feature">
-        <div class="feature-title"><img src="../assets/image-icon/contact-icon.png" alt="Image de contact" class="image-icon">Contact</div>
-        <div class="feature-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aliquid at culpa, eligendi est id illum incidunt maiores modi nisi optio quaerat quod, recusandae reprehenderit sapiente sequi similique sit, velit.</div>
+        <div class="feature-title"><img src="../assets/image-icon/clock.svg" alt="Image d'horloge" class="image-icon">Horraire</div>
+        <div class="feature-text">Si vous désirez savoir nos horraires, vous devez cliquer sur le bouton <span id="span-contact"></span></div>
+      </div>
+    </div>
+  </section>
+  <section class="second-section">
+    <div class="features">
+      <div class="feature">
+        <div class="feature-title"><img src="../assets/image-icon/heart.svg" alt="Image de coeur" class="image-icon">Bonne réputation</div>
+        <div class="feature-text">Nous avons très bonne réputation dans la ville de Charleville-Mézières !</div>
+      </div>
+      <div class="feature">
+        <div class="feature-title"><img src="../assets/image-icon/coiffure.svg" alt="Image de coiffure" class="image-icon">Coiffure</div>
+        <div class="feature-text">Nous faisons des coiffures pour hommes comme femmes !</div>
+      </div>
+      <div class="feature">
+        <div class="feature-title"><img src="../assets/image-icon/experience.png" alt="Image d'expérience" class="image-icon">Expérience</div>
+        <div class="feature-text">Nous avons plusieurs années d'expériences dans l'univers de la coiffure !</div>
       </div>
     </div>
   </section>
@@ -86,4 +102,14 @@
 #span-contact {
   color: red;
 }
+.second-section {
+  min-height: 20vh;
+  padding-top: 126px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 50px;
+}
 </style>
+<script setup>
+</script>
