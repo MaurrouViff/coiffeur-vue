@@ -79,58 +79,38 @@ export default {
   text-decoration: underline;
 }
 select {
-  position: relative;
-  padding: 8px;
+  padding: 10px;
   font-size: 16px;
-  border: 1px solid black;
-  background-color: white;
-  color: black;
+  border: 1px solid rgba(12, 239, 205, 0.93);
+  border-radius: 4px;
+
+  color: #ffffff;
+  width: 10%;
+  transition: border-color 0.2s ease-in-out;
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
-select:active::after,
-select:focus::after {
-  content: "";
-  border-style: solid;
-  border-width: 6px 6px 0;
-  border-color: black transparent transparent transparent;
-  display: inline-block;
-  position: absolute;
-  top: 50%;
-  right: 10px;
-  transform: translateY(-50%);
-}
 
-select::after {
-  content: "";
-  border-style: solid;
-  border-width: 0 6px 6px;
-  border-color: transparent transparent black transparent;
-  display: inline-block;
-  position: absolute;
-  top: 50%;
-  right: 10px;
-  transform: translateY(-50%);
-}
-
-select:hover {
-  cursor: pointer;
-}
-
-select option:checked {
-  background-color: black;
-  color: white;
+select:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
 }
 
 select option {
-  background-color: white;
-  color: black;
+  padding: 10px;
+  font-size: 16px;
+  background-color: #fff;
+  color: #333;
 }
 
-select {
-  -moz-appearance: none;
-}
 
-select {
-  -webkit-appearance: none;
+select::after {
+  content: '\25BC';
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  font-size: 16px;
+  pointer-events: none;
 }
 </style>
