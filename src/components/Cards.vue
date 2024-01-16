@@ -16,7 +16,7 @@
       </div>
       <div class="feature">
         <div class="feature-title"><img src="../assets/image-icon/clock.svg" alt="Image d'horloge" class="image-icon">Horraire</div>
-        <div class="feature-text">Si vous désirez savoir nos horraires, vous devez cliquer sur le bouton <span id="span-contact"></span></div>
+        <div class="feature-text">Si vous désirez savoir nos horraires, vous devez cliquer sur le bouton "<span id="span-contact">HORRAIRE</span>" ou <router-link class="link-to-page" to="/horraire">cliquez ici</router-link></div>
       </div>
     </div>
   </section>
@@ -88,7 +88,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: -80px;
+  margin-bottom: 30px;
 }
 .link-to-page {
   color: red;
@@ -108,7 +108,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 50px;
+  margin-bottom: 100px;
 }
 </style>
 <script setup>
