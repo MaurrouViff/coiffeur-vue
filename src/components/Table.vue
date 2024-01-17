@@ -104,9 +104,6 @@
     </table>
   </div>
 </template>
-<script>
-
-</script>
 <style scoped>
 table {
   border-collapse: separate;
