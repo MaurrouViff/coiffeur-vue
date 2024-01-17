@@ -2,7 +2,7 @@
   "database_name": "Contact",
   "tables": [
     {
-      "table_name": "eleve",
+      "table_name": "personnel",
       "columns": [
         "id",
         "nom",
