@@ -73,7 +73,6 @@ export default {
 .link-to-page {
   color: red;
   text-decoration: none;
-
 }
 .link-to-page:hover {
   text-decoration: underline;
