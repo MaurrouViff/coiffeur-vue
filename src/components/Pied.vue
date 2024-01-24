@@ -1,7 +1,7 @@
 <template>
 <div>
   <footer>
-    <p>Ce site web appartient au salon nuances - <span id="date">20XX-20XX.</span></p>
+    <p>Ce site web appartient au salon nuances - <span id="date">20XX-20XX</span></p>
   </footer>
 </div>
 </template>
