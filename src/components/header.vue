@@ -3,7 +3,7 @@
   <header>
     <nav class="navbar">
       <ul class="nav-menu">
-        <h2>Salon Nuances</h2>
+        <li class="nav-item"><h2>Salon Nuances</h2></li>
         <li class="nav-item"><router-link to="/accueil" class="link-button">ACCUEIL</router-link></li>
         <li class="nav-item"><router-link to="/contact" class="link-button">CONTACT</router-link></li>
         <li class="nav-item"><router-link to="/personnel" class="link-button">PERSONNEL</router-link></li>
