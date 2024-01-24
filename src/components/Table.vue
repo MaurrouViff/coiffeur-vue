@@ -1,127 +1,112 @@
 <template>
-  <div>
-    <table>
-      <thead>
-      <tr>
-        <th>Nos horraires</th>
-        <th>Mardi</th>
-        <th>Mercredi</th>
-        <th>Jeudi</th>
-        <th>Vendredi</th>
-        <th>Samedi</th>
-      </tr>
-      </thead>
-      <tbody>
-      <tr>
-        <td>8h - 9h</td>
-        <td>X</td>
-        <td>X</td>
-        <td>X</td>
-        <td>X</td>
-        <td>✔</td>
-      </tr>
-      <tr>
-        <td>9h - 10h</td>
-        <td>✔</td>
-        <td>X</td>
-        <td>✔</td>
-        <td>✔</td>
-        <td>✔</td>
-      </tr>
-      <tr>
-        <td>10h - 11h</td>
-        <td>✔</td>
-        <td>✔</td>
-        <td>✔</td>
-        <td>✔</td>
-        <td>✔</td>
-      </tr>
-      <tr>
-        <td>11h - 12h</td>
-        <td>✔</td>
-        <td>✔</td>
-        <td>✔</td>
-        <td>✔</td>
-        <td>✔</td>
-      </tr>
-      <tr>
-        <td>12h - 13h</td>
-        <td>✔</td>
-        <td>✔</td>
-        <td>✔</td>
-        <td>✔</td>
-        <td>✔</td>
-      </tr>
-      <tr>
-        <td>13h - 14h</td>
-        <td>✔</td>
-        <td>✔</td>
-        <td>✔</td>
-        <td>✔</td>
-        <td>✔</td>
-      </tr>
-      <tr>
-        <td>14h - 15h</td>
-        <td>✔</td>
-        <td>✔</td>
-        <td>✔</td>
-        <td>✔</td>
-        <td>✔</td>
-      </tr>
-      <tr>
-        <td>15h - 16h</td>
-        <td>✔</td>
-        <td>✔</td>
-        <td>✔</td>
-        <td>✔</td>
-        <td>✔</td>
-      </tr>
-      <tr>
-        <td>17h - 18h</td>
-        <td>✔</td>
-        <td>✔</td>
-        <td>✔</td>
-        <td>✔</td>
-        <td>X</td>
-      </tr>
-      <tr>
-        <td>18h - 19h</td>
-        <td>✔</td>
-        <td>X</td>
-        <td>X</td>
-        <td>✔</td>
-        <td>X</td>
-      </tr>
-      <tr>
-        <td>19h - 20h</td>
-        <td>X</td>
-        <td>X</td>
-        <td>X</td>
-        <td>✔</td>
-        <td>X</td>
-      </tr>
-      </tbody>
-    </table>
+  <div id="corps">
+    <h2>Information sur nos horraires :</h2>
+      <div>
+        <label for="selectColumn" class="label">Sélectionnez un horraire :</label><br />
+        <select v-model="selectedColumn" id="selectColumn">
+          <option v-for="column in columns" :key="column">{{ column }}</option>
+        </select>
+
+        <div v-if="selectedData">
+          <p v-if="selectedColumn === 'Mardi'">
+            <strong>Voici notre horraire pour mardi :</strong> <br /> {{ selectedData.Mardi }}
+          </p>
+          <p v-if="selectedColumn === 'Mercredi'">
+            <strong>Voici notre horraire pour mercredi :</strong> <br /> {{ selectedData.Mercredi }}
+          </p>
+          <p v-if="selectedColumn === 'Jeudi'">
+            <strong>Voici notre horraire pour jeudi :</strong> <br /> {{ selectedData.Jeudi }}
+          </p>
+          <p v-if="selectedColumn === 'Vendredi'">
+            <strong>Voici notre horraire pour vendredi :</strong> <br /> {{ selectedData.Vendredi }}
+          </p>
+          <p v-if="selectedColumn === 'Samedi'">
+            <strong>Voici notre horraire pour samedi :</strong> <br /> {{ selectedData.Samedi }}
+          </p>
+        </div>
+      </div>
   </div>
 </template>
+<script>
+import axios from "axios";
+
+export default {
+  data() {
+    return {
+      horraireData: null,
+      selectedColumn: 'horraireMardi'
+    };
+  },
+  computed: {
+    columns() {
+      if (this.horraireData && this.horraireData.tables.length > 0) {
+        return this.horraireData.tables[0].columns;
+      }
+      return [];
+    },
+    selectedData() {
+      if (this.horraireData && this.horraireData.tables.length > 0) {
+        return this.horraireData.tables[0].columns;
+      }
+      return null;
+    },
+  },
+  mounted() {
+    this.loadData();
+  },
+  methods: {
+    async loadData() {
+      try {
+        const response = await axios.get('/horraire.json');
+        this.horraireData = response.data;
+      } catch (error) {
+        console.error("Erreur lors du changement des données :", error);
+      }
+    },
+  },
+};
+</script>
 <style scoped>
-table {
-  border-collapse: separate;
-  border-spacing: 0;
-  border-radius: 10px;
-  margin: 0 auto;
-  background-color: black;
-  color: white;
-
+#corps {
+  color: black;
+  text-align: center;
+  justify-content: center;
+  justify-items: center;
 }
 
-td, th {
-  border: 2px solid rgba(255, 255, 255, 0.5);
-  padding: 8px;
-  box-shadow: 0 0 0 1px rgb(0, 0, 0);
-  margin: -2px;
+select {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid rgba(12, 239, 205, 0.93);
+  border-radius: 4px;
+
+  color: #ffffff;
+  width: 10%;
+  transition: border-color 0.2s ease-in-out;
+  background-color: rgba(0, 0, 0, 0.8);
 }
-th {
-  color: rgba(255, 255, 255, 0.69);
+
+
+select:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+select option {
+  padding: 10px;
+  font-size: 16px;
+  background-color: #fff;
+  color: #333;
+}
+
+
+select::after {
+  content: '\25BC';
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  font-size: 16px;
+  pointer-events: none;
 }
 </style>
