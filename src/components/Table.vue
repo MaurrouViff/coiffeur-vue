@@ -2,7 +2,7 @@
   <div id="corps">
     <h2>Information sur nos horraires :</h2>
       <div>
-        <label for="selectColumn" class="label">Sélectionnez un horraire :</label><br />
+        <label for="selectColumn" class="label">Sélectionnez un jour de la semaine :</label><br />
         <select v-model="selectedColumn" id="selectColumn">
           <option v-for="column in columns" :key="column">{{ column }}</option>
         </select>
