@@ -30,7 +30,7 @@ export default {
   data() {
     return {
       contactData: null,
-      selectedColumn: 'adresse',
+      selectedColumn: 'adrressse',
     };
   },
   computed: {
