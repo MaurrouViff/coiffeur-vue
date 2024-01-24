@@ -1,0 +1,24 @@
+{
+  "database_name": "Horraire",
+  "tables": [
+    {
+      "table_name": "horraireJson",
+      "columns": [
+        "Mardi",
+        "Mercredi",
+        "Jeudi",
+        "Vendredi",
+        "Samedi"
+      ],
+      "data": [
+        {
+          "Mardi": "X-X",
+          "Mercredi": "X-X",
+          "Jeudi": "X-X",
+          "Vendredi": "X-X",
+          "Samedi": "X-X"
+        }
+      ]
+    }
+  ]
+}
