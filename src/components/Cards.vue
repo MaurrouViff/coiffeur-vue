@@ -90,15 +90,6 @@
   justify-content: center;
   margin-bottom: 30px;
 }
-.link-to-page {
-  color: red;
-  text-decoration: none;
-  opacity: 0.8;
-}
-.link-to-page:hover {
-  opacity: 1;
-  text-decoration: underline;
-}
 #span-contact {
   color: red;
 }
