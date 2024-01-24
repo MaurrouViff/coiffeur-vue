@@ -12,11 +12,11 @@
       </div>
       <div class="feature">
         <div class="feature-title"><img src="../assets/image-icon/contact-icon.png" alt="Image de contact" class="image-icon">Contact</div>
-        <div class="feature-text">Cliquez sur le bouton "<span id="span-contact">CONTACT</span>" pour nous contacter</div>
+        <div class="feature-text">Cliquez sur le bouton "<span id="span-contact">CONTACT</span>" pour nous contacter !</div>
       </div>
       <div class="feature">
         <div class="feature-title"><img src="../assets/image-icon/clock.svg" alt="Image d'horloge" class="image-icon">Horraire</div>
-        <div class="feature-text">Si vous désirez savoir nos horraires, vous devez cliquer sur le bouton "<span id="span-contact">HORRAIRE</span>" ou <router-link class="link-to-page" to="/horraire">cliquez ici</router-link></div>
+        <div class="feature-text">Si vous désirez savoir nos horraires, vous devez cliquer sur le bouton "<span id="span-contact">HORRAIRE</span>" !</div>
       </div>
     </div>
   </section>
