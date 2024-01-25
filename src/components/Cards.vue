@@ -102,5 +102,3 @@
   margin-bottom: 100px;
 }
 </style>
-<script setup>
-</script>
