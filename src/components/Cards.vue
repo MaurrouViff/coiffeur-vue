@@ -4,19 +4,19 @@
     <div class="features">
       <div class="feature">
         <div class="feature-title"><img src="../assets/image-icon/equipe-icon.svg" alt="Image d'une équipe" class="image-icon">Équipe</div>
-        <div class="feature-text">Nous sommes une équipe de trois coiffeures prêtes à vous accueullir !</div>
+        <div class="feature-text">Nous sommes une équipe de trois coiffeures prêtes à vous accueullir.</div>
       </div>
       <div class="feature">
         <div class="feature-title"><img src="../assets/image-icon/stagiaire-icon.png" alt="Image de stagiaire" class="image-icon">Stagiaire</div>
-        <div class="feature-text">Nous prenons des stagiaires lors de leur stage d'observation en classe de 3ème !</div>
+        <div class="feature-text">Nous prenons des stagiaires lors de leur stage d'observation en classe de 3ème.</div>
       </div>
       <div class="feature">
         <div class="feature-title"><img src="../assets/image-icon/contact-icon.png" alt="Image de contact" class="image-icon">Contact</div>
-        <div class="feature-text">Cliquez sur le bouton "<span id="span-contact">CONTACT</span>" pour nous contacter !</div>
+        <div class="feature-text">Cliquez sur le bouton "<span id="span-contact">CONTACT</span>" pour nous contacter.</div>
       </div>
       <div class="feature">
         <div class="feature-title"><img src="../assets/image-icon/clock.svg" alt="Image d'horloge" class="image-icon">Horraire</div>
-        <div class="feature-text">Si vous désirez savoir nos horraires, vous devez cliquer sur le bouton "<span id="span-contact">HORRAIRE</span>" !</div>
+        <div class="feature-text">Si vous désirez savoir nos horraires, vous devez cliquer sur le bouton "<span id="span-contact">HORRAIRE</span>".</div>
       </div>
     </div>
   </section>
@@ -24,15 +24,15 @@
     <div class="features">
       <div class="feature">
         <div class="feature-title"><img src="../assets/image-icon/heart.svg" alt="Image de coeur" class="image-icon">Bonne réputation</div>
-        <div class="feature-text">Nous avons très bonne réputation dans la ville de Charleville-Mézières !</div>
+        <div class="feature-text">Nous avons très bonne réputation dans la ville de Charleville-Mézières.</div>
       </div>
       <div class="feature">
         <div class="feature-title"><img src="../assets/image-icon/coiffure.svg" alt="Image de coiffure" class="image-icon">Coiffure</div>
-        <div class="feature-text">Nous faisons des coiffures pour hommes comme femmes !</div>
+        <div class="feature-text">Nous faisons des coiffures pour hommes comme femmes.</div>
       </div>
       <div class="feature">
         <div class="feature-title"><img src="../assets/image-icon/experience.png" alt="Image d'expérience" class="image-icon">Expérience</div>
-        <div class="feature-text">Nous avons plusieurs années d'expériences dans l'univers de la coiffure !</div>
+        <div class="feature-text">Nous avons plusieurs années d'expériences dans l'univers de la coiffure.</div>
       </div>
     </div>
   </section>
