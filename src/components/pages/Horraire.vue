@@ -1,9 +1,9 @@
 <template>
-<div>
-  <WarningHorraire />
-  <hr>
-  <Tableau />
-</div>
+  <div>
+    <WarningHorraire />
+    <hr>
+    <Tableau />
+  </div>
 </template>
 <script>
 import Tableau from "../Table.vue";

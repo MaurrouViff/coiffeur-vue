@@ -2,7 +2,7 @@
   <div id="corps">
     <h1>Informations de contact</h1>
     <div>
-      <label for="selectColumn" class="label">Sélectionnez une colonne :</label><br />
+      <label for="selectColumn" class="label">Sélectionnez votre recherche :</label><br />
       <select v-model="selectedColumn" id="selectColumn">
         <option v-for="column in columns" :key="column">{{ column }}</option>
       </select>
