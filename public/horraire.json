@@ -12,11 +12,11 @@
       ],
       "data": [
         {
-          "Mardi": "X-X",
-          "Mercredi": "X-X",
-          "Jeudi": "X-X",
-          "Vendredi": "X-X",
-          "Samedi": "X-X"
+          "Mardi": "9h00 - 19h00",
+          "Mercredi": "10h00 - 18h00",
+          "Jeudi": "9h00 - 18h00",
+          "Vendredi": "9h00 - 20h00",
+          "Samedi": "8h00 - 17h00"
         }
       ]
     }
