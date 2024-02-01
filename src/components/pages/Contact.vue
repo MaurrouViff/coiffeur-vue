@@ -9,10 +9,10 @@
 
       <div v-if="selectedData">
         <p v-if="selectedColumn === 'adresse'">
-          <strong>Notre adresse :</strong> <br /> {{ selectedData.adresse }}
+          <strong>Notre adresse :</strong> <br /> <span>{{ selectedData.adresse }}</span>
         </p>
         <p v-if="selectedColumn === 'telephone'">
-          <strong>Notre numéro de téléphone : </strong> <br /> <span id="telephone">{{selectedData.telephone }}</span>
+          <strong>Notre numéro de téléphone : </strong> <br /> <span>{{selectedData.telephone }}</span>
         </p>
         <p v-else-if="selectedColumn === 'position'">
           <strong>Notre position :</strong><br />
@@ -113,6 +113,9 @@ select::after {
   pointer-events: none;
 }
 #telephone {
+  color: red;
+}
+span {
   color: red;
 }
 </style>
