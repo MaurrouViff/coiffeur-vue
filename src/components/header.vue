@@ -9,6 +9,7 @@
         <li class="nav-item"><router-link to="/personnel" class="link-button">PERSONNEL</router-link></li>
         <li class="nav-item"><router-link to="/horraire" class="link-button">HORRAIRE</router-link></li>
         <li class="nav-item"><router-link to="/propos" class="link-button">À PROPOS</router-link></li>
+        <li class="nav-item"><router-link to="/galerie" class="link-button">GALERIE</router-link></li>
       </ul>
     </nav>
   </header>
