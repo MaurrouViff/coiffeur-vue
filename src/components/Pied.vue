@@ -1,7 +1,7 @@
 <template>
 <div>
   <footer>
-    <p>Salon Nuances - <span id="date">2003-2024</span></p>
+    <p>Salon Nuances - <span>2003-2024</span></p>
   </footer>
 </div>
 </template>
@@ -19,7 +19,7 @@ footer {
   justify-content: center;
   text-align: center;
 }
-#date {
+span {
   font-size: 12px;
   color: red;
 }
