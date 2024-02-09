@@ -8,6 +8,7 @@ import Contact from './components/pages/Contact.vue';
 import Horraire from './components/pages/Horraire.vue';
 import Propos from './components/pages/Propos.vue';
 import Personnel from './components/pages/Personnel.vue';
+import Galerie from './components/pages/Galerie.vue';
 
 // Liste des routes
 const routes = [
@@ -16,7 +17,8 @@ const routes = [
     { path: '/contact', component: Contact },
     { path: '/horraire', component: Horraire },
     { path: '/propos', component: Propos },
-    { path: '/personnel', component: Personnel }
+    { path: '/personnel', component: Personnel },
+    { path: '/galerie', component: Galerie }
 ];
 
 const router = createRouter({
