@@ -82,7 +82,6 @@ select {
   font-size: 16px;
   border: 1px solid rgba(12, 239, 205, 0.93);
   border-radius: 4px;
-
   color: #ffffff;
   width: 10%;
   transition: border-color 0.2s ease-in-out;
@@ -112,9 +111,7 @@ select::after {
   font-size: 16px;
   pointer-events: none;
 }
-#telephone {
-  color: red;
-}
+
 span {
   color: red;
 }
