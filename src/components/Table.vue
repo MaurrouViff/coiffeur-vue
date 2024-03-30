@@ -1,6 +1,6 @@
 <template>
   <div id="corps">
-    <h2>Informations sur nos horaires :</h2>
+    <h2>Informations sur nos horraires :</h2>
     <div>
       <label for="selectColumn" class="label">Sélectionnez un jour de la semaine :</label><br />
       <select v-model="selectedColumn" id="selectColumn">
