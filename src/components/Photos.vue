@@ -34,7 +34,7 @@ hr {
 }
 img {
   width: 100%;
-  height: 1500px;
+  height: 2000px;
 }
 section {
   margin-bottom: -5px;

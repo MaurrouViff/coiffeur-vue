@@ -10,10 +10,10 @@
 
       <div v-if="selectedData">
         <p v-if="selectedColumn !== 'Tous'">
-          <strong>Voici notre horaire pour {{ selectedColumn }} :</strong> <br /> {{ selectedData[selectedColumn] }}
+          <strong>Voici notre horraire pour {{ selectedColumn }} :</strong> <br /> {{ selectedData[selectedColumn] }}
         </p>
         <p v-else>
-          <strong>Voici nos horaires pour tous les jours :</strong> <br />
+          <strong>Voici nos horraires pour tous les jours :</strong> <br />
           <span v-for="(value, column) in selectedData" :key="column">
             <strong>{{ column }}:</strong> {{ value }}<br />
           </span>
