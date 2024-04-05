@@ -1,6 +1,6 @@
 <template>
   <div id="corps">
-    <h2>Informations sur nos horraires :</h2>
+    <h2>Informations sur nos horaires :</h2>
     <div>
       <label for="selectColumn" class="label">Sélectionnez un jour de la semaine :</label><br />
       <select v-model="selectedColumn" id="selectColumn">
@@ -10,7 +10,7 @@
 
       <div v-if="selectedData">
         <p v-if="selectedColumn !== 'Tous'">
-          <strong>Voici notre horraire pour {{ selectedColumn }} :</strong> <br /> {{ selectedData[selectedColumn] }}
+          <strong>Voici notre horaire pour {{ selectedColumn }} :</strong> <br /> {{ selectedData[selectedColumn] }}
         </p>
         <p v-else>
           <strong>Voici nos horraires pour tous les jours :</strong> <br />
